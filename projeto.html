@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head> 
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projeto de João Matheus</title>
+
+  <style>
+    body {
+      font-size: 15px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      background-image: url("Imagens/Tech.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+    }
+
+    header {
+      background-color: rgb(114, 146, 250);
+      color: rgb(0, 0, 0);
+      text-align: center;
+      margin-left: 2px;
+      margin-right: 2px;
+      padding: 20px 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 50px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      font-family: Impact;
+      font-style: italic;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    .category {
+      margin-bottom: 15px;
+      border-radius: 30px;
+      background-color: rgb(149, 172, 250);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .category-header {
+      background-color: rgb(114, 146, 250);
+      padding: 12px 16px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .category-header:hover {
+      background-color: rgb(97, 123, 209);
+    }
+
+    .category-content {
+      display: none;
+      padding: 15px;
+      border-top: 1px solid rgb(149, 172, 250);
+    }
+
+    .item {
+      margin-bottom: 12px;
+    }
+
+    .item strong {
+      color: rgb(6, 46, 175);
+      font-family: Arial;
+      font-size: 15px;
+      font-style: italic;
+    }
+
+    .toggle-icon {
+      font-size: 19px;
+      transition: transform 0.3s ease;
+    }
+
+    .open .toggle-icon {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <b>📱 APLICATIVOS E SITES QUE AUXILIAM NAS MAIS VARIADAS TAREFAS DO DIA A DIA</b>
+    </h1>
+  </header>
+
+  <main class="container">
+    <!-- Categoria Saúde e Bem-estar -->
+    <div class="category">
+      <div class="category-header">Saúde e Bem-estar <span class="toggle-icon">▶</span></div>
+
+      <div class="category-content">
+        <div class="item"><strong>MyFitnessPal: Diário alimentar (Aplicativo):</strong> Aplicativo para contar calorias e acompanhar a 
+          alimentação e exercícios. Ajuda a monitorar a alimentação, a manter uma dieta equilibrada e atingir 
+          metas de saúde, com um extenso banco de dados de alimentos.</div>
+
+        <div class="item"><strong>Nike Training Club (Aplicativo):</strong> Aplicativo de treinos gratuitos com 
+          exercícios guiados em vídeo. Traz planos de força, resistência, ioga e bem-estar.</div>
+
+        <div class="item"><strong>Strava: corrida, pedal, trilha (Aplicativo):</strong> Aplicativo para registrar 
+          atividades físicas como corrida, caminhada e ciclismo. Ele mostra distância, tempo e rota, além de 
+          permitir compartilhar treinos com amigos e participar de desafios.</div>
+
+        <div class="item"><strong>Sleep Cycle: Monitor de sono (Aplicativo):</strong> Aplicativo que monitora o 
+          sono. Ele analisa seus ciclos de sono e te acorda no momento mais adequado para sentir menos cansaço.
+        </div>
+
+        <div class="item"><strong>Saúde.gov.br (Site):</strong> Portal e Aplicativo do Ministério da Saúde. Reúne 
+          informações oficiais de saúde, campanhas e orientações confiáveis, carteira digital de vacinação e 
+          histórico de atendimentos do SUS.</div>
+      </div>
+    </div>
+
+    <!-- Categoria Aprendizado e Estudo -->
+    <div class="category">
+      <div class="category-header">Aprendizado e Estudo <span class="toggle-icon">▶</span></div>
+
+      <div class="category-content">
+        <div class="item"><strong>Duolingo: Inglês e muito mais! (App/Site):</strong> Aplicativo para aprender idiomas de forma divertida. 
+          Usa lições rápidas, jogos e metas diárias.</div>
+
+        <div class="item"><strong>Khan Academy (App/Site):</strong> Plataforma gratuita de educação. Oferece 
+          aulas e exercícios em várias áreas como matemática, ciências e história.</div>
+
+        <div class="item"><strong>Coursera: avance sua carreira (App/Site):</strong> Site com cursos online de universidades e 
+          empresas do mundo todo. Tem conteúdos gratuitos e pagos, com certificados.</div>
+
+        <div class="item"><strong>Cursos em vídeo on-line Udemy (App/Site):</strong> Plataforma de cursos online pagos e acessíveis. 
+          Qualquer pessoa pode aprender ou ensinar sobre diversos temas.</div>
+
+        <div class="item"><strong>Harvard University (Site):</strong> Oferece cursos online gratuitos e pagos 
+          em várias áreas, como ciência, tecnologia, negócios, entre outros. Eles podem ser feitos pelo 
+          computador, têm certificado opcional e permitem aprender com conteúdos de uma das universidades mais 
+          famosas do mundo.</div>
+      </div>
+    </div>
+
+    <!-- Categoria Finanças Pessoais -->
+    <div class="category">
+      <div class="category-header">Finanças Pessoais <span class="toggle-icon">▶</span></div>
+
+      <div class="category-content">
+
+        <div class="item"><strong>Nubank: conta, cartão e mais (Aplicativo):</strong> Um banco digital que oferece 
+          conta gratuita, cartão de crédito e opções de investimento. Tudo é controlado pelo aplicativo, sem 
+          burocracia e sem tarifas abusivas.</div>
+
+        <div class="item"><strong>Mercado Pago: banco digital (Aplicativo):</strong> Carteira digital do Mercado 
+          Livre. Permite pagar compras, transferir dinheiro, fazer recargas e até receber pagamentos pelo 
+          celular.</div>
+
+        <div class="item"><strong>PicPay: Conta, Cartão e Pix (Aplicativo):</strong> Aplicativo de carteira 
+          digital. Com ele é possível pagar contas, transferir dinheiro, receber valores e fazer compras 
+          direto pelo celular.</div>
+
+        <div class="item"><strong>Mobills: Finanças Pessoais (App/Site):</strong> Aplicativo de controle 
+          financeiro. Ele ajuda a organizar gastos, criar orçamentos e acompanhar metas de economia.</div>
+
+        <div class="item"><strong>Organizze Controle financeiro (App/Site):</strong> Aplicativo simples para 
+          controlar despesas. Permite registrar entradas e saídas de dinheiro e acompanhar o saldo disponível.
+        </div>
+      </div>
+    </div>
+
+    <!-- Categoria Gestão e Planejamento -->
+    <div class="category">
+      <div class="category-header">Gestão e Planejamento <span class="toggle-icon">▶</span></div>
+
+      <div class="category-content">
+
+        <div class="item"><strong>Google Agenda (Aplicativo):</strong> Agenda digital que organiza compromissos e 
+          envia lembretes. Sincroniza com todos os dispositivos.</div>
+
+        <div class="item"><strong>Google Keep: notas e listas (Aplicativo):</strong> Aplicativo de anotações simples e 
+          rápido. Ele permite criar listas, lembretes e notas com texto, imagem ou áudio, tudo sincronizado com 
+          sua conta Google.</div>
+
+        <div class="item"><strong>Notion: notas, tarefas e IA (App/Site):</strong> Aplicativo de organização multifuncional. Permite criar 
+          notas, tarefas, tabelas e até gerenciar projetos. Organização completa de tarefas, estudos e projetos.
+        </div>
+
+        <div class="item"><strong>Todoist: Agenda & Planner (App/Site):</strong> Aplicativo para organizar 
+          tarefas e projetos do dia a dia. Ele permite criar listas com prazos, prioridades e lembretes, 
+          ajudando a manter tudo em ordem.</div>
+
+        <div class="item"><strong>Trello (App/Site):</strong> Aplicativo de organização visual. Usa quadros e cartões 
+          para acompanhar tarefas e projetos de forma simples.</div>
+      </div>
+    </div>
+
+    <!-- Categoria Navegação e Transporte -->
+    <div class="category">
+      <div class="category-header">Navegação e Transporte <span class="toggle-icon">▶</span></div>
+
+      <div class="category-content">
+        <div class="item"><strong>99: Corridas, Food, Pay (Aplicativo):</strong> Aplicativo de transporte que 
+          conecta passageiros a motoristas particulares. Ele permite chamar corridas rapidamente, acompanhar a 
+          chegada do carro e pagar pelo app com cartão ou dinheiro.</div>
+
+        <div class="item"><strong>Waze - GPS e Trânsito ao vivo (Aplicativo):</strong> Aplicativo de navegação por GPS. Mostra rotas, trânsito e 
+          alertas em tempo real enviados por motoristas.</div>
+
+        <div class="item"><strong>Google Maps (App/Site):</strong> Mapa online que mostra rotas, trânsito, 
+          transporte público e locais próximos. Muito usado em viagens.</div>
+
+        <div class="item"><strong>Uber: Peça viagem de carro (Aplicativo):</strong> Aplicativo de transporte que conecta passageiros a motoristas 
+          particulares. Também oferece entregas em algumas cidades.</div>
+
+        <div class="item"><strong>Moovit: Horários de Ônibus (App/Site):</strong> Aplicativo para transporte público. Mostra rotas de 
+          ônibus, metrô e trem em tempo real, especificando até com horários.</div>
+      </div>
+    </div>
+
+    <!-- Categoria Entretenimento e Diversão -->
+    <div class="category">
+      <div class="category-header">Entretenimento e Diversão <span class="toggle-icon">▶</span></div>
+
+      <div class="category-content">
+        <div class="item"><strong>Beach Buggy Racing (Aplicativo):</strong> Jogo de corrida estilo “Mario Kart”. 
+          Corridas divertidas com pistas cheias de obstáculos e poderes.</div>
+
+        <div class="item"><strong>Instagram (Aplicativo):</strong> Rede social focada em fotos e vídeos curtos. 
+          Muito usada para compartilhar momentos e acompanhar influenciadores.</div>
+
+        <div class="item"><strong>Netflix (App/Site):</strong> Plataforma de streaming de filmes e séries. 
+          Tem produções próprias e conteúdos variados.</div>
+
+        <div class="item"><strong>Spotify: música e podcasts (App/Site):</strong> Aplicativo de música por streaming. Permite ouvir 
+          milhões de músicas, criar playlists e descobrir novos artistas.</div>
+
+        <div class="item"><strong>YouTube (App/Site):</strong> Site e Aplicativo de vídeos online. Reúne desde 
+          tutoriais até música, vlogs e transmissões ao vivo.</div>
+
+        <div class="item"><strong>WEBTOON: Manga, Comics, Manhwa (App/Site):</strong> Plataforma de quadrinhos digitais. Oferece HQs 
+          e mangás em formato de leitura vertical no celular.</div>
+      </div>
+    </div>
+
+    <!-- Categoria Entrega de Comida e Mercado -->
+    <div class="category">
+      <div class="category-header">Entrega de Comida e Mercado <span class="toggle-icon">▶</span></div>
+
+      <div class="category-content">
+        <div class="item"><strong>iFood comida e mercado em casa (Aplicativo):</strong> Aplicativo de entrega de comida. Conecta restaurantes, 
+          lanchonetes e mercados aos clientes.</div>
+
+        <div class="item"><strong>Zé Delivery (Aplicativo):</strong> Aplicativo de entrega de bebidas. Ele 
+          permite pedir cervejas, refrigerantes, água e outros produtos com entrega rápida direto na sua casa.
+        </div>
+
+        <div class="item"><strong>Rappi: entrega de tudo (Aplicativo):</strong> Aplicativo de entregas rápidas. Além de comida, entrega 
+          mercado, farmácia e outros serviços.</div>
+
+        <div class="item"><strong>aiqfome: delivery de tudo (Aplicativo):</strong> Aplicativo de delivery de 
+          comida. Ele permite pedir refeições de restaurantes próximos e acompanhar a entrega direto pelo 
+          celular.</div>
+
+        <div class="item"><strong>Carrefour: Shopping e Mercado (App/Site), Extra: Loja online com ofertas 
+          (App/Site), Pão de Açúcar Mais (App/Site):</strong> Aplicativos de supermercados. Permitem fazer 
+          compras online e receber em casa.</div>
+      </div>
+    </div>
+
+    <!-- Categoria Compras -->
+    <div class="category">
+      <div class="category-header">Compras <span class="toggle-icon">▶</span></div>
+
+      <div class="category-content">
+        <div class="item"><strong>Mercado Livre: Compras Online (App/Site):</strong> Marketplace de produtos novos e usados. 
+          Tem entrega rápida e proteção ao comprador.</div>
+
+        <div class="item"><strong>Shopee: 10.10 Lojas Oficiais (App/Site):</strong> Aplicativo de compras online popular por preços baixos e
+          cupons. Reúne vendedores do Brasil e do exterior.</div>
+
+        <div class="item"><strong>SHEIN-Compras Online (App/Site):</strong> Aplicativo de compras de roupas, 
+          acessórios e calçados. Ele oferece produtos da moda a preços acessíveis, com entrega em casa e 
+          promoções frequentes.</div>
+
+        <div class="item"><strong>Centauro: loja de esportes (App/Site):</strong> Aplicativo de compras focado 
+          em artigos esportivos. Nele é possível encontrar roupas, calçados, acessórios e equipamentos para 
+          diferentes esportes, com opções de entrega e promoções.</div>
+
+        <div class="item"><strong>Americanas (App/Site), Magalu: loja e compras online (App/Site), 
+          Amazon Shopping (App/Site):</strong> Lojas virtuais que vendem uma grande variedade de produtos. 
+          Permitem comprar com entrega rápida.</div>
+      </div>
+    </div>
+
+    <!-- Categoria Outras Utilidades -->
+    <div class="category">
+      <div class="category-header">Outras Utilidades <span class="toggle-icon">▶</span></div>
+
+      <div class="category-content">
+        <div class="item"><strong>Shazam: músicas e shows (Aplicativo):</strong> Aplicativo que identifica músicas em segundos. Basta ouvir um
+          trecho para descobrir nome e artista.</div>
+
+        <div class="item"><strong>Google Lens (App/Site):</strong> Ferramenta que usa a câmera para reconhecer 
+          objetos, textos e lugares. Útil para traduzir e pesquisar.</div>
+
+        <div class="item"><strong>Buscapé: Promoção e cashback (App/Site):</strong> Site e Aplicativo para comparar preços de produtos em 
+          várias lojas. Ajuda a encontrar a melhor oferta.</div>
+
+        <div class="item"><strong>ChatGPT (App/Site):</strong> Aplicativo de inteligência artificial que 
+          conversa com as pessoas. Ele pode responder perguntas, criar textos, dar ideias e ajudar em tarefas 
+          do dia a dia.</div>
+
+        <div class="item"><strong>TudoGostoso Receitas (App/Site):</strong> Aplicativo que contém diversas receitas.
+          Passo a Passo simples de receitas, com fotos, vídeos e comentários de outras pessoas.</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Abrir e fechar categorias -->
+  <script>
+    document.querySelectorAll('.category-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const category = header.parentElement;
+        category.classList.toggle('open');
+        const content = category.querySelector('.category-content');
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+
+</html>
